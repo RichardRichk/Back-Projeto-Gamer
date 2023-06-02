@@ -107,6 +107,64 @@ namespace Back_Projeto_Gamer.Controllers
             c.SaveChanges();
 
             return LocalRedirect("~/Equipe/Listar");
+           
+        }
+
+        [Route("Editar/{id}")]
+        public IActionResult Editar(int id)
+        {
+            Equipe equipeBuscada = c.Equipe.First(x => x.IdEquipe == id);
+
+            ViewBag.Equipe = equipeBuscada;
+
+            return View("Edit");
+        }
+
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        {
+            Equipe equipeAtualizada = new Equipe();
+
+            equipeAtualizada.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            equipeAtualizada.Name = form["Nome"].ToString();
+
+            if (form.Files.Count > 0)
+            {
+                var file = form.Files[0];
+
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipe");
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                var path = Path.Combine(folder, file.FileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                equipeAtualizada.Image = file.FileName;
+            }
+            else
+            {
+                equipeAtualizada.Image = "padrao.png";
+            }
+            
+            Equipe equipeBuscada = c.Equipe.First(x => x.IdEquipe == equipeAtualizada.IdEquipe);
+
+            equipeBuscada.Name = equipeAtualizada.Name;
+            equipeBuscada.Image = equipeAtualizada.Image;
+
+            c.Equipe.Update(equipeBuscada);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
         }
 
 

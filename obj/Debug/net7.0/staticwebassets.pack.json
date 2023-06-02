@@ -13,12 +13,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipe\\img-programer-1.png",
+      "PackagePath": "staticwebassets\\img\\Equipe\\img-programer-1.png"
+    },
+    {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipe\\img-programer-2.png",
+      "PackagePath": "staticwebassets\\img\\Equipe\\img-programer-2.png"
+    },
+    {
       "Id": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipes\\Chicago.jpg",
       "PackagePath": "staticwebassets\\img\\Equipes\\Chicago.jpg"
     },
     {
       "Id": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipes\\img-programer-1.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\img-programer-1.png"
+    },
+    {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipes\\padrao.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\padrao.png"
     },
     {
       "Id": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\js\\site.js",

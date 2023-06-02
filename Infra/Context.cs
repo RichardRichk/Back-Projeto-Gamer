@@ -24,7 +24,7 @@ namespace Back_Projeto_Gamer.Infra
             {
                 //STRING DE CONEXAO COM O BANCO
 
-                
+
                 //Data Source : O nome do servidor do gerenciador do banco
                 //initial catalog : nome do banco de dados
 

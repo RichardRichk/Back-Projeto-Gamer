@@ -1,0 +1,21 @@
+@model Jogador
+
+@{
+    ViewData["tittle"] = "Jogador";
+}
+
+<h1>Cadastro de Jogadores</h1>
+
+<form method="post" action="@Url.Action("Cadastrar")" enctype="multipart/form-data">
+    <tr>
+
+        <label for="">Nome</label>
+        <input type="text" name="Name" required>
+
+        <label for="">Imagem</label>
+        <input type="file" name="Image">
+
+        <button type="submit">Cadastrar</button>
+
+    </tr>
+</form>

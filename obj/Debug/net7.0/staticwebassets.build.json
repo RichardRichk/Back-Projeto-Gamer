@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lAnI0pZrs1eKSMCGUGSxO+/FmSsyubQnBqLDFL7vwUs=",
+  "Hash": "rhhLM2oUw0r66jzaXnzFygJbh3xEJaSLOgf9ou72Soc=",
   "Source": "Back-Projeto-Gamer",
   "BasePath": "_content/Back-Projeto-Gamer",
   "Mode": "Default",
@@ -85,6 +85,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipe\\img-programer-1.png",
+      "SourceId": "Back-Projeto-Gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\",
+      "BasePath": "_content/Back-Projeto-Gamer",
+      "RelativePath": "img/Equipe/img-programer-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipe\\img-programer-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipe\\img-programer-2.png",
+      "SourceId": "Back-Projeto-Gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\",
+      "BasePath": "_content/Back-Projeto-Gamer",
+      "RelativePath": "img/Equipe/img-programer-2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipe\\img-programer-2.png"
+    },
+    {
       "Identity": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipes\\Chicago.jpg",
       "SourceId": "Back-Projeto-Gamer",
       "SourceType": "Discovered",
@@ -117,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\img-programer-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\img\\Equipes\\padrao.png",
+      "SourceId": "Back-Projeto-Gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\",
+      "BasePath": "_content/Back-Projeto-Gamer",
+      "RelativePath": "img/Equipes/padrao.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\padrao.png"
     },
     {
       "Identity": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\wwwroot\\js\\site.js",
