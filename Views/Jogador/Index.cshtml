@@ -7,15 +7,19 @@
 <h1>Cadastro de Jogadores</h1>
 
 <form method="post" action="@Url.Action("Cadastrar")" enctype="multipart/form-data">
-    <tr>
+    <label for="">Nome</label>
+    <input type="text" name="Name" required>
 
-        <label for="">Nome</label>
-        <input type="text" name="Name" required>
+    <label for="">Email</label>
+    <input type="text" name="Email">
 
-        <label for="">Imagem</label>
-        <input type="file" name="Image">
+    <label for="">Senha</label>
+    <input type="text" name="Email">
 
-        <button type="submit">Cadastrar</button>
+    <label for"">Equipe</label>
+    <select type="text" name="NameEquipe"></select>
 
-    </tr>
+    <button type="submit">Cadastrar</button>
 </form>
+
+@* Falta fazer a tabela *@
