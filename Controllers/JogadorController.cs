@@ -42,7 +42,61 @@ namespace Back_Projeto_Gamer.Controllers
 
             novoJogador.Senha = form["Senha"].ToString();
 
-            novoJogador.IdEquipe = int.Parse(form["NameEquipe"]);
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"]);
+
+            c.Jogador.Add(novoJogador);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
+        }
+
+
+        [Route("Excluir/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            Jogador jogadorBuscado = c.Jogador.First(j => j.IdJogador == id);
+
+            c.Remove(jogadorBuscado);
+
+            c.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
+        }
+
+
+        [Route("Editar/{id}")]
+        public IActionResult Editar(int id)
+        {
+            Jogador jogadorBuscado = c.Jogador.First(x => x.IdJogador == id);
+
+            ViewBag.Jogador = jogadorBuscado;
+
+            return View("Edit");
+        }
+
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormFileCollection form)
+        {
+            Jogador jogadorAtualizado = new Jogador();
+
+            jogadorAtualizado.IdJogador = int.Parse(form["IdJogador"].ToString());
+            jogadorAtualizado.Name = form["Name"].ToString();
+            jogadorAtualizado.Email = form["Email"].ToString();
+            jogadorAtualizado.Senha = form["Senha"].ToString();
+            jogadorAtualizado.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            Jogador jogadorBuscado = c.Jogador.First(j => j.IdJogador == jogadorAtualizado.IdJogador);
+
+            jogadorBuscado.Name = jogadorAtualizado.Name;
+            jogadorBuscado.Email = jogadorAtualizado.Email;
+            jogadorBuscado.Senha = jogadorAtualizado.Senha;
+            jogadorBuscado.IdEquipe = jogadorAtualizado.IdEquipe;
+
+            c.Jogador.Update(jogadorBuscado);
+
+            c.SaveChanges();
 
             return LocalRedirect("~/Jogador/Listar");
         }
