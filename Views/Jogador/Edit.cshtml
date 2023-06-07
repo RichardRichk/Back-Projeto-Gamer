@@ -1,4 +1,4 @@
-@Model
+@model Jogador
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,12 +6,12 @@
 
 <h1>Editar Jogador</h1>
 
-<form method="post" action="@Url.Action("Atualizar")" >
+<form method="post" action="@Url.Action("Atualizar")">
 
     <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
     <label for="">Nome</label>
-    <input type="text" name="Nome" value="@ViewBag.Jogador.Name">
+    <input type="text" name="Name" value="@ViewBag.Jogador.Name">
 
     <label for="">Email</label>
     <input type="text" name="Email" value="@ViewBag.Jogador.Email">
@@ -19,7 +19,7 @@
     <label for="">Senha</label>
     <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
 
-    <label for"">Equipe</label>
+    <label for="">Equipe</label>
     <select name="IdEquipe" id="IdEquipe">
         <option value="0">Equipes</option>
 
@@ -36,4 +36,5 @@
         }
     </select>
 
+    <button type="submit">Atualizar</button>
 </form>
