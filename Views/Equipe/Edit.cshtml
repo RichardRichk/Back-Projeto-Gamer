@@ -5,17 +5,24 @@
 }
 
 <h1>Edicao de equipes</h1>
+@if (ViewBag.UserName == null)
+    {
+        <h2>Voce nao tem acesso a pagina enquanto nao logar, clique abaixo:</h2>
+        <a asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+    }
+    else
+    {
+        <form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
 
-<form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
+            <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
 
-    <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
+            <label for=""></label>
+            <input type="text" name="Nome" value="@ViewBag.Equipe.Name">
 
-    <label for=""></label>
-    <input type="text" name="Nome" value="@ViewBag.Equipe.Name">
+            <label for=""></label>
+            <input type="file" name="Image" value="@ViewBag.Equipe.Image">
 
-    <label for=""></label>
-    <input type="file" name="Image" value="@ViewBag.Equipe.Image">
+            <button type="submit">Atualizar</button>
 
-    <button type="submit">Atualizar</button>
-
-</form>
+        </form>
+    }
