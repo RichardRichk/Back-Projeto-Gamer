@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj": {}
+    "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj": {
+    "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj",
+        "projectUniqueName": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj",
         "projectName": "Back-Projeto-Gamer",
-        "projectPath": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj",
+        "projectPath": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\Back-Projeto-Gamer.csproj",
         "packagesPath": "C:\\Users\\45811737874\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45811737874\\Desktop\\Back-Projeto-Gamer\\obj\\",
+        "outputPath": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\45811737874\\AppData\\Roaming\\NuGet\\NuGet.Config",
