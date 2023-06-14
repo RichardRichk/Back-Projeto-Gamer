@@ -241,6 +241,22 @@
       "PackagePath": "staticwebassets\\assets\\vector-user.svg"
     },
     {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\css\\Header-Footer.css",
+      "PackagePath": "staticwebassets\\css\\Header-Footer.css"
+    },
+    {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\css\\equipes.css",
+      "PackagePath": "staticwebassets\\css\\equipes.css"
+    },
+    {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\css\\jogadores.css",
+      "PackagePath": "staticwebassets\\css\\jogadores.css"
+    },
+    {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
