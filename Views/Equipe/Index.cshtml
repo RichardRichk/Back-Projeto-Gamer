@@ -76,6 +76,7 @@
                 </div>
 
                 <input class="campo-entrada" type="text" name="Nome" placeholder="Digite o nome da sua equipe:" required>
+
                 <label class="foto" for="foto-file">
                     <input type="file" id="foto-file" name="Imagem">
                 </label>
@@ -90,6 +91,9 @@
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Imagem</th>
+                    <th></th>
+                    <th>Acoes</th>
+                    <th></th>
                 </thead>
 
                 <tbody>
@@ -103,12 +107,12 @@
                             </td>
                             <td>
                                 <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"><img
-                                        class="yellow-trash" src="./assets/trash.png" alt=""></a>
+                                        class="yellow-trash" src="~/assets/trash.png" alt=""></a>
                             </td>
 
                             <td>
                                 <a asp-area="" asp-controller="Equipe" asp-action="Editar"
-                                    asp-route-id="@equipe.IdEquipe">Editar</a>
+                                    asp-route-id="@equipe.IdEquipe"><img class="lapis-icon" src="~/assets/lapis-icon.png"></a>
                             </td>
                         </tr>
                     }

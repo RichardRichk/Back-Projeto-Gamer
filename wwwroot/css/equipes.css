@@ -86,7 +86,7 @@ main .cadastro-equipes .frm-cad-equipe .campo-entrada {
     margin-bottom: 25px;
     padding: 5px 10px;
     /* font-size: 22px; */
-    color: white;
+    color: black;
     outline: none;
 
     font-family: TitilliumWeb-Thin, sans-serif;
@@ -104,7 +104,7 @@ main .cadastro-equipes .frm-cad-equipe .campo-entrada {
 }
 
 .frm-cad-equipe .campo-entrada::placeholder {
-    color: white;
+    color: black;
 }
 
 
@@ -184,7 +184,7 @@ main .cadastro-equipes table thead th {
     font-family: TitilliumWeb-Black;
     font-size: 20px;
     text-transform: uppercase;
-
+    padding-left: 55px;
 }
 
 /* linhas da tabela, independentemente do cabeçalho ou corpo */
@@ -228,6 +228,10 @@ main .cadastro-equipes table td img.green-play {
 }
 
 main .cadastro-equipes table td img.yellow-trash {
+    width: 15px;
+}
+
+main .cadastro-equipes table td img.lapis-icon {
     width: 15px;
 }
 
