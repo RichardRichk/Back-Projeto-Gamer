@@ -42,7 +42,7 @@ else
 
                 <input class="campo-entrada" type="password" id="senha" name="Senha" placeholder="Digite a Senha:" required>
 
-                <select class="campo-entrada" id="equipe-select" name="IdEquipe" id="IdEquipe" required>
+                <select class="campo-entrada" id="equipe-select" name="IdEquipe" id="IdEquipe">
                     <option value="0">Equipes</option>
 
                     @foreach (Equipe equipe in ViewBag.Equipe)
@@ -52,6 +52,7 @@ else
                 </select>
 
                 <button type="submit">Cadastrar</button>
+
             </form>
 
             <!-- TABELA CADASTRO DE EQUIPES -->
@@ -86,7 +87,7 @@ else
 
                             <td>
                                 <a asp-area="" asp-controller="Jogador" asp-action="Editar"
-                                    asp-route-id="@jogador.IdJogador"><img class="lapis-icon" src="~/assets/lapis-icon.png"></a>
+                                    asp-route-id="@jogador.IdJogador"><img class="edit-icon" src="~/assets/edit-icon.png"></a>
                             </td>
                         </tr>
                     }

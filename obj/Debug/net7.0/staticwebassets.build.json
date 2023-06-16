@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4vvhslZyMUSkGEZ6lb5ThVvXptHOgnBabcqSzzyBxzE=",
+  "Hash": "0MU7TS2Xmad3EFgxhyvl7ta3+Tfnuk4KACTzjvf+LUA=",
   "Source": "Back-Projeto-Gamer",
   "BasePath": "_content/Back-Projeto-Gamer",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\Botao_voltar_ao_topo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\edit-icon.png",
+      "SourceId": "Back-Projeto-Gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\",
+      "BasePath": "_content/Back-Projeto-Gamer",
+      "RelativePath": "assets/edit-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\edit-icon.png"
     },
     {
       "Identity": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\envelope-icon.png",
@@ -816,23 +833,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\joystick-prof-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\lapis-icon.png",
-      "SourceId": "Back-Projeto-Gamer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\",
-      "BasePath": "_content/Back-Projeto-Gamer",
-      "RelativePath": "assets/lapis-icon.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\lapis-icon.png"
-    },
-    {
       "Identity": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\linkedin-yellow.svg",
       "SourceId": "Back-Projeto-Gamer",
       "SourceType": "Discovered",
@@ -899,6 +899,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\logotipo-gamer.svg"
+    },
+    {
+      "Identity": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\logout-icon.png",
+      "SourceId": "Back-Projeto-Gamer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\",
+      "BasePath": "_content/Back-Projeto-Gamer",
+      "RelativePath": "assets/logout-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\logout-icon.png"
     },
     {
       "Identity": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\market-icon.png",

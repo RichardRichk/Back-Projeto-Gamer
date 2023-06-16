@@ -3,7 +3,6 @@
 /* Main */
 
 main {
-    margin-top: 60px;
     height: 1231px;
     background-image: url(../images/background-equipes-mobile.png);
     background-size: contain;
@@ -231,7 +230,7 @@ main .cadastro-equipes table td img.yellow-trash {
     width: 15px;
 }
 
-main .cadastro-equipes table td img.lapis-icon {
+main .cadastro-equipes table td img.edit-icon {
     width: 15px;
 }
 

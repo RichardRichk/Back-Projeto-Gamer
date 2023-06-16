@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\assets\\Botao_voltar_ao_topo.svg"
     },
     {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\edit-icon.png",
+      "PackagePath": "staticwebassets\\assets\\edit-icon.png"
+    },
+    {
       "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\envelope-icon.png",
       "PackagePath": "staticwebassets\\assets\\envelope-icon.png"
     },
@@ -185,10 +189,6 @@
       "PackagePath": "staticwebassets\\assets\\joystick-prof-icon.svg"
     },
     {
-      "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\lapis-icon.png",
-      "PackagePath": "staticwebassets\\assets\\lapis-icon.png"
-    },
-    {
       "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\linkedin-yellow.svg",
       "PackagePath": "staticwebassets\\assets\\linkedin-yellow.svg"
     },
@@ -203,6 +203,10 @@
     {
       "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\logotipo-gamer.svg",
       "PackagePath": "staticwebassets\\assets\\logotipo-gamer.svg"
+    },
+    {
+      "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\logout-icon.png",
+      "PackagePath": "staticwebassets\\assets\\logout-icon.png"
     },
     {
       "Id": "C:\\Users\\45811737874\\Desktop\\Projeto-gamer-Migraton\\Back-Projeto-Gamer\\wwwroot\\assets\\market-icon.png",

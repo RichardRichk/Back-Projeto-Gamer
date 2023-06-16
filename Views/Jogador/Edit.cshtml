@@ -4,7 +4,19 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Editar Jogador</h1>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipes</title>
+    <link rel="stylesheet" href="~/css/equipes.css">
+</head>
+
+
+<main>
+    <section class="container-grid cadastro-equipes">
 
 @if (ViewBag.UserName == null)
     {
@@ -13,21 +25,22 @@
     }
     else
     {      
-        <form method="post" action="@Url.Action("Atualizar")">
+        <form class="frm-cad-equipe" method="post" action="@Url.Action("Atualizar")">
+
+            <div class="cadequipe-titulo">
+                    <h1>Atualizar Jogadores</h1>
+                    <hr>
+            </div>
 
             <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
-            <label for="">Nome</label>
-            <input type="text" name="Name" value="@ViewBag.Jogador.Name">
+            <input class="campo-entrada" type="text" id="nome-jogador" name="Name" placeholder="Digite o nome do Jogador:" value="@ViewBag.Jogador.Name" required>
 
-            <label for="">Email</label>
-            <input type="text" name="Email" value="@ViewBag.Jogador.Email">
+            <input class="campo-entrada" type="email" id="email-jogador" name="Email" placeholder="Digite o Email do Jogador:" value="@ViewBag.Jogador.Email" required>
 
-            <label for="">Senha</label>
-            <input type="password" name="Senha" value="@ViewBag.Jogador.Senha">
+            <input class="campo-entrada" type="password" id="senha" name="Senha" placeholder="Digite a Senha:" value="@ViewBag.Jogador.Senha" required>
 
-            <label for="">Equipe</label>
-            <select name="IdEquipe" id="IdEquipe">
+            <select class="campo-entrada" name="IdEquipe" id="IdEquipe">
                 <option value="0">Equipes</option>
 
                 @foreach (Equipe equipe in ViewBag.Equipe)
@@ -46,3 +59,5 @@
             <button type="submit">Atualizar</button>
         </form>
     }
+    </section>
+</main>

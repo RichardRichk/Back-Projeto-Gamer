@@ -54,7 +54,6 @@
                         {
                             <a asp-controller="Equipe" asp-action="Index">Equipes</a>
                             <a asp-controller="Jogador" asp-action="Index">Jogadores</a>
-                            <a asp-controller="Login" asp-action="Logout">Logout</a>
                         }
 
                         <a class="phone-box">
@@ -82,9 +81,16 @@
                 <input type="checkbox" id="mostra-esconde-icones">
                 <div class="icons-header-bkg">
                     <div class="icons-header">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">
-                            <img src="~/assets/user-icon.svg" alt="user-login">
-                        </a>
+                        @if (ViewBag.UserName != null)
+                        {
+                            <a asp-controller="Login" asp-action="Logout"><img class="logout-icon" src="~/assets/logout-icon.png" alt=""></a>
+                        }
+                        else
+                        {
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">
+                                <img src="~/assets/user-icon.svg" alt="user-login">
+                            </a>
+                        }
                         <img src="~/assets/market-icon.png" alt="market icon">
                         <img src="~/assets/search-icon.png" alt="search icon">
                     </div>
@@ -106,13 +112,13 @@
                 <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
                     altamente comprometida.</p>
                 <div class="social-fticons">
-                    <a href="#">
+                    <a target="_blank" href="https://www.facebook.com/">
                         <img src="~/assets/facebook-yellow.svg" alt="Icone Facebook">
                     </a>
-                    <a href="#">
+                    <a target="_blank" href="https://br.linkedin.com/">
                         <img src="~/assets/linkedin-yellow.svg" alt="Icone Linkedin">
                     </a>
-                    <a href="#">
+                    <a target="_blank" href="https://www.instagram.com/">
                         <img src="~/assets/instagram-yellow.svg" alt="Icone instagram">
                     </a>
                 </div>
@@ -126,11 +132,11 @@
                 </div>
 
                 <ul class="menu-footer">
-                    <li class="menu-ftitem"><a href="#">Início</a></li>
-                    <li class="menu-ftitem"><a href="#">Jogadores</a></li>
-                    <li class="menu-ftitem"><a href="#">Notícias</a></li>
-                    <li class="menu-ftitem"><a href="#">Login</a></li>
-                    <li class="menu-ftitem" id="link-equipe"><a href="#">Equipes</a></li>
+                    <li class="menu-ftitem"><a href="~/">Início</a></li>
+                    <li class="menu-ftitem"><a href="~/Jogador/Listar">Jogadores</a></li>
+                    <li class="menu-ftitem"><a href="~/#noticias">Notícias</a></li>
+                    <li class="menu-ftitem"><a href="~/Login/Login">Login</a></li>
+                    <li class="menu-ftitem" id="link-equipe"><a href="~/Equipe/Listar">Equipes</a></li>
                 </ul>
             </div>
 

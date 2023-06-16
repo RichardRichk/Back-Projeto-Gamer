@@ -4,7 +4,18 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edicao de equipes</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipes</title>
+    <link rel="stylesheet" href="~/css/equipes.css">
+</head>
+
+<main>
+
+    <section class="container-grid cadastro-equipes">
+
 @if (ViewBag.UserName == null)
     {
         <h2>Voce nao tem acesso a pagina enquanto nao logar, clique abaixo:</h2>
@@ -12,17 +23,21 @@
     }
     else
     {
-        <form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
+        <form method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data" class="frm-cad-equipe">
 
             <input type="hidden" name="IdEquipe" value="@ViewBag.Equipe.IdEquipe">
 
-            <label for=""></label>
-            <input type="text" name="Nome" value="@ViewBag.Equipe.Name">
+            <input class="campo-entrada" type="text" name="Nome" placeholder="Digite o nome da sua equipe:" value="@ViewBag.Equipe.Name" required>
 
-            <label for=""></label>
-            <input type="file" name="Image" value="@ViewBag.Equipe.Image">
+            <label class="foto" for="foto-file">
+            <input type="file" id="foto-file" name="Image" value="@ViewBag.Equipe.Image">
+            </label>
 
             <button type="submit">Atualizar</button>
 
         </form>
     }
+
+    </section>
+
+</main>
