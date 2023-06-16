@@ -48,7 +48,7 @@ namespace Back_Projeto_Gamer.Controllers
 
             if (jogadorBuscado != null)
             {
-                message = "Email ja cadastrado!";
+                // message = "Email ja cadastrado!";
 
                 return LocalRedirect("~/Jogador/Listar");
             }
