@@ -28,6 +28,7 @@ namespace Back_Projeto_Gamer.Controllers
         public IActionResult Index()
         {
             ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.UserEmail = HttpContext.Session.GetString("UserEmail");
             return View();
         }
 
@@ -43,6 +44,7 @@ namespace Back_Projeto_Gamer.Controllers
             if (jogadorBuscado != null)
             {
                 HttpContext.Session.SetString("UserName", jogadorBuscado.Name);
+                HttpContext.Session.SetString("UserEmail", jogadorBuscado.Email);
 
                 return LocalRedirect("~/");
             }

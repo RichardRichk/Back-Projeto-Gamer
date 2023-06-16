@@ -52,6 +52,7 @@ else
                 </select>
 
                 <button type="submit">Cadastrar</button>
+                <h3>@TempData.Peek("message")</h3>
 
             </form>
 
@@ -79,6 +80,10 @@ else
                                 <img src="/img/Equipes/@jogador.Equipe.Image" alt="Imagem da equipe @jogador.Equipe.Name"
                                     width="50px">
                             </td>
+
+                            @if (jogador.Email == ViewBag.UserEmail)
+                            {
+
                             <td>
                                 <a asp-area="" asp-controller="Jogador" asp-action="Excluir"
                                     asp-route-id="@jogador.IdJogador"><img class="yellow-trash" src="~/assets/trash.png"
@@ -89,6 +94,14 @@ else
                                 <a asp-area="" asp-controller="Jogador" asp-action="Editar"
                                     asp-route-id="@jogador.IdJogador"><img class="edit-icon" src="~/assets/edit-icon.png"></a>
                             </td>
+                                
+                            }
+                            else
+                            {
+                                <td></td>
+                                <td></td>
+                            }
+
                         </tr>
                     }
                 </tbody>

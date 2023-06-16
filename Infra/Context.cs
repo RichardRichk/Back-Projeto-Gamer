@@ -39,8 +39,8 @@ namespace Back_Projeto_Gamer.Infra
                 //pwd = "senha do seu usuario"
                 //TrustServerCertificate
 
-                optionsBuilder.UseSqlServer("Data Source = NOTE20-S15; initial catalog = gamerManha; user Id = sa; pwd = Senai@134; TrustServerCertificate = true");
-                // optionsBuilder.UseSqlServer("Data Source = DESKTOP-KN6REE4\\SQLEXPRESS; initial catalog = gamerManha; user Id = sa; pwd = Senai@134; TrustServerCertificate = true"); 
+                // optionsBuilder.UseSqlServer("Data Source = NOTE20-S15; initial catalog = gamerManha; user Id = sa; pwd = Senai@134; TrustServerCertificate = true");
+                optionsBuilder.UseSqlServer("Data Source = DESKTOP-KN6REE4\\SQLEXPRESS; initial catalog = gamerManha; user Id = sa; pwd = Senai@134; TrustServerCertificate = true"); 
             }
         }
 

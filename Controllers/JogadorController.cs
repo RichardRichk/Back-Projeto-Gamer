@@ -20,12 +20,16 @@ namespace Back_Projeto_Gamer.Controllers
             _logger = logger;
         }
 
+        [TempData]
+        public string message{get;set;}
+
         Context c = new Context();
 
         [Route("Listar")]
         public IActionResult Index()
         {
             ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.UserEmail = HttpContext.Session.GetString("UserEmail");
 
             ViewBag.Jogador = c.Jogador.ToList();
             ViewBag.Equipe = c.Equipe.ToList();
@@ -46,11 +50,25 @@ namespace Back_Projeto_Gamer.Controllers
 
             novoJogador.IdEquipe = int.Parse(form["IdEquipe"]);
 
+            Jogador jogadorBuscado = c.Jogador.FirstOrDefault(j => j.Email == novoJogador.Email);
+
+            if (jogadorBuscado != null)
+            {
+                message = "Email ja cadastrado!";
+
+                return LocalRedirect("~/Jogador/Listar");
+            }
+            else
+            {
+                
             c.Jogador.Add(novoJogador);
 
             c.SaveChanges();
 
             return LocalRedirect("~/Jogador/Listar");
+
+            }
+
         }
 
 
@@ -71,6 +89,7 @@ namespace Back_Projeto_Gamer.Controllers
         public IActionResult Editar(int id)
         {
             ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            ViewBag.UserEmail = HttpContext.Session.GetString("UserEmail");
 
             Jogador jogadorBuscado = c.Jogador.First(x => x.IdJogador == id);
 
